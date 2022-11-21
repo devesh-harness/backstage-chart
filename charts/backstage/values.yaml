@@ -59,7 +59,7 @@ diagnosticMode:
 ## @section Ingress parameters
 ingress:
   ## @param ingress.enabled Enable the creation of the ingress resource
-  enabled: false
+  enabled: true
 
   ## @param ingress.className Name of the IngressClass cluster resource which defines which controller will implement the resource (e.g nginx)
   className: ""
@@ -86,9 +86,9 @@ ingress:
 
 backstage:
   image:
-    registry: ""
-    repository: ""
-    tag: ""
+    registry: "erangaeb"
+    repository: "waula-backstage"
+    tag: "0.1"
     ## Specify a imagePullPolicy
     ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/user-guide/images/#pre-pulling-images
@@ -191,7 +191,7 @@ networkPolicy:
 postgresql:
 
   # -- Switch to enable or disable the PostgreSQL helm chart
-  enabled: false
+  enabled: true
 
   # -- The authentication details of the Postgres database
   auth:
@@ -200,7 +200,7 @@ postgresql:
     username: bn_backstage
 
     # -- Password for the custom user to create
-    password: ""
+    password: "hunter2"
 
     # -- Name of existing secret to use for PostgreSQL credentials
     existingSecret: ""
