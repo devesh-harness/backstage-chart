@@ -122,7 +122,7 @@ backstage:
 service:
   ## @param service.type Kubernetes Service type
   ##
-  type: ClusterIP
+  type: LoadBalancer
   ## @param service.ports.backend Backstage svc port for client connections
   ##
   ports:
