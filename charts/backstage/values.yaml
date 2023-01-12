@@ -102,7 +102,7 @@ backstage:
     ##   - myRegistryKeySecretName
     ##
     pullSecrets:
-      - regcred-dev
+      - dockerhub-harness-cg-manager
     ## Set to true if you would like to see extra information on logs
     ##
     debug: false
