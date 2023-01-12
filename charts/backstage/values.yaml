@@ -101,10 +101,10 @@ backstage:
     ## pullSecrets:
     ##   - myRegistryKeySecretName
     ##
-#     pullSecrets:
-#       - gcr-access-token
-    imagepPullSecrets:
-      - dockerhub-pull
+    imagePullSecrets:
+      - gcr-access-token
+#     imagepPullSecrets:
+#       - dockerhub-pull
     ## Set to true if you would like to see extra information on logs
     ##
     debug: false
