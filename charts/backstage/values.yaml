@@ -101,8 +101,8 @@ backstage:
     ## pullSecrets:
     ##   - myRegistryKeySecretName
     ##
-    pullSecrets:
-      - dockerhub-pull
+#     pullSecrets:
+#       - dockerhub-pull
     ## Set to true if you would like to see extra information on logs
     ##
     debug: false
