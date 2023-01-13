@@ -104,7 +104,7 @@ backstage:
     ## pullSecrets:
     ##   - myRegistryKeySecretName
     ##
-    imagePullSecrets:
+    pullSecrets:
       - gcr-access-token
 #     imagepPullSecrets:
 #       - dockerhub-pull
